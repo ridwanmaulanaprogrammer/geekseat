@@ -22,16 +22,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\VillagerController;
 use App\Http\Controllers\WitchProblemSolverController;
+use Ramsey\Uuid\Type\Integer;
 
 class WitchController extends Controller
 {
     private $killCounts;
 
-    function __construct() {
+    function __construct() 
+    {
         $this->killCounts = array();
     }
 
-    public function getKillCount($year) {
+    public function getKillCount($year) : int 
+    {
         if ($year <= 0) {
             return -1;
         }
@@ -41,7 +44,8 @@ class WitchController extends Controller
         return $this->killCounts[$year];
     }
 
-    private function calculateKillCount($year) {
+    private function calculateKillCount($year) : int 
+    {
         $killCount = 0;
         for ($i = 1; $i <= $year; $i++) {
             $killCount += $i;
@@ -55,6 +59,7 @@ class WitchController extends Controller
         return $witchProblemSolver = (new WitchProblemSolverController)->solve($personA, $personB);
     }
 }
+
 
 ```
 
@@ -72,12 +77,14 @@ class VillagerController extends Controller
     private $yearOfDeath;
     private $ageOfDeath;
   
-    function __construct($yearOfDeath, $ageOfDeath) {
+    function __construct($yearOfDeath, $ageOfDeath) 
+    {
         $this->yearOfDeath = $yearOfDeath;
         $this->ageOfDeath = $ageOfDeath;
     }
   
-    public function getYearOfBirth() {
+    public function getYearOfBirth() : int 
+    {
         $yearOfBirth = $this->yearOfDeath - $this->ageOfDeath;
         if ($yearOfBirth <= 0) {
             return -1;
@@ -85,6 +92,7 @@ class VillagerController extends Controller
         return $yearOfBirth;
     }
 }
+
 
 ```
 
@@ -102,11 +110,13 @@ class WitchProblemSolverController extends Controller
 {
     private $witch;
 
-    function __construct() {
+    function __construct() 
+    {
         $this->witch = new WitchController();
     }
 
-    public function solve($personA, $personB) {
+    public function solve($personA, $personB) : float
+    {
         $yearOfBirthA = $personA->getYearOfBirth();
         $yearOfBirthB = $personB->getYearOfBirth();
         if ($yearOfBirthA == -1 || $yearOfBirthB == -1) {
