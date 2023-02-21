@@ -53,11 +53,17 @@ class WitchController extends Controller
         return $killCount;
     }
 
-    public function testWitch(){
+   public function testWitch() : JsonResponse
+   {
         $personA = new VillagerController(12, 10); 
         $personB = new VillagerController(17, 13);
-        return $witchProblemSolver = (new WitchProblemSolverController)->solve($personA, $personB);
-    }
+        $average  = $witchProblemSolver = (new WitchProblemSolverController)->solve($personA, $personB);
+
+        return response()->json([
+            "average" => $average,
+        ],200);
+
+   }
 }
 
 
