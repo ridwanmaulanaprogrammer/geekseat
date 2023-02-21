@@ -33,9 +33,8 @@ class WitchController extends Controller
     }
 
     public function testWitch(){
-        $witchProblemSolver = new WitchProblemSolverController();
         $personA = new VillagerController(12, 10);
         $personB = new VillagerController(17, 13);
-        return $witchProblemSolver->solve($personA, $personB);
+        return $witchProblemSolver = (new WitchProblemSolverController)->solve($personA, $personB);
     }
 }
