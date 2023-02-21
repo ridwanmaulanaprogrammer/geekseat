@@ -9,11 +9,13 @@ class WitchProblemSolverController extends Controller
 {
     private $witch;
 
-    function __construct() {
+    function __construct() 
+    {
         $this->witch = new WitchController();
     }
 
-    public function solve($personA, $personB) {
+    public function solve($personA, $personB) : float
+    {
         $yearOfBirthA = $personA->getYearOfBirth();
         $yearOfBirthB = $personB->getYearOfBirth();
         if ($yearOfBirthA == -1 || $yearOfBirthB == -1) {
