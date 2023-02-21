@@ -1,9 +1,12 @@
-Ini adalah Repot untuk tes di geekseat...
+This is for repo geekseat test
 
-ada 3 buah controller untuk menyelesaikan soal geekseat
+i have 3 controoler for solving problem witch
 - WitchController
 - VillagerController
 - WitchProblemSolverController
 
-Untuk testing ada di routes :
+if you done clone or pull this repo you can tes this with url or you can tes with insomnia or postman in end point below using GET
 - http://127.0.0.1:8000/testWitch
+
+
+Thanks advance
