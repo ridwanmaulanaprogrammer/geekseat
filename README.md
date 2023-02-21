@@ -1,7 +1,6 @@
 This is for repo geekseat test
 
-i have 3 controller for solving problem witch
-namespace App\Http\Controllers;
+i have 3 controller for solving problem witch with namespace App\Http\Controllers;
 - WitchController
 - VillagerController
 - WitchProblemSolverController
