@@ -123,7 +123,7 @@ class WitchProblemSolverController extends Controller
 
 and test.. 
  - hemmm enough using insomnia, ok ok ok
-![alt text] http://185.210.144.144/images/view%20result.png
+![alt text] (http://185.210.144.144/images/view%20result.png)
 
 
 Thanks in advance
