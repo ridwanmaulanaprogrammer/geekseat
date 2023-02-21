@@ -7,7 +7,7 @@ i have 3 controller for solving problem witch with namespace App\Http\Controller
 
 
 
-if you done clone or pull this repo you can tes this with url or you can tes with insomnia or postman in endpoint below using GET
+You can clone or pull this repo and then for tes this task, hit with insomnia or postman in endpoint below using GET
 - http://127.0.0.1:8000/testWitch
 
 
