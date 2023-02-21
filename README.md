@@ -124,6 +124,6 @@ class WitchProblemSolverController extends Controller
 and test.. 
  - hemmm enough using insomnia, ok ok ok
 ![alt text] (http://185.210.144.144/images/result.png?raw=true "Title")
-<img src="[relative/path/in/repository/to/image.svg](http://185.210.144.144/images/result.png)" width="128"/>
+<img src="http://185.210.144.144/images/result.png" width="128"/>
 
 Thanks in advance
