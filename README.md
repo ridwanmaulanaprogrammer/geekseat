@@ -123,7 +123,7 @@ class WitchProblemSolverController extends Controller
 
 and test.. 
  - hemmm enough using insomnia, ok ok o
-<img src="http://185.210.144.144/images/result.png" width="500" height="500"/>
+<img src="http://185.210.144.144/images/result.png" width="700" height="500"/>
 
 ohhhh noooooo whyyyyy 6.5, im not get 4.2, arrghhhh, maybe this time im will dieeee, :cold_sweat:, but i was try hard... like you
 
